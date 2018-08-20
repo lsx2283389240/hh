@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	 *{
+		 margin:0;
+		 padding:0;
+	  }
+	  #drag{
+		 width:100px;
+		 height:100px;
+		background:blue;
+	 }
+	  #box{
+		 width:500px;
+		  height:500px;
+		border:3px red solid;
+		 margin:100px auto;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="drag" draggable="true"></div>
+	<div id="box"></div>
+	<script>
+		/*
+		h5拖拽事件：
+			被拖拽事件
+			ondragstart拖拽开始
+			ondrag      拖拽过程中
+			ondragend
+			目标元素事件
+			ondragenter
+			ondragover
+			ondragleave
+			ondrop
+			阻止浏览器的默认事件
+			preventDefault()
+
+		*/
+		var oDrag=document.getElementById("drag");
+		var oBox=document.getElementById("box");
+		 oDrag.ondragstart=function(e){
+			
+			this.style.background="green";
+		}
+        oDrag.ondrag=function(){
+			this.innerHTML="被拖找中...";
+		}
+		  oDrag.ondragend=function(){
+			 this.style.background="blue";
+			this.innerHTML="拖拽完毕";
+		}
+		//目标元素事件
+
+		oBox.ondragenter=function(e){
+			 e.preventDefault();
+			this.innerHTML="我要进来了你准备好了吗";
+		    this.style.background="yellow";
+		}
+		oBox.ondragover=function(e){
+			 e.preventDefault();
+		   this.style.background="red";
+		   this.innerHTML="我准备好了";
+		}
+		oBox.ondragleave=function(){
+			this.style.background="purple";
+			 this.innerHTML="轻轻地我走了";
+		}
+		oBox.ondrop=function(){
+			this.style.background="red";
+			 this.innerHTML="";
+
+		}
+	</script>
+ </body>
+</html>

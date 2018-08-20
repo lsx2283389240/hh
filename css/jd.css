@@ -1,0 +1,66 @@
+
+ul {
+				list-style: none;
+			}
+			img {
+				border: 0;
+				vertical-align: middle;
+			}
+			body {
+			 font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+			color: #666;
+			background: #fff;
+			}
+			a {
+				color: #666;
+				text-decoration: none;
+			}
+			.slider{
+				width: 730px;
+				height: 453px;
+				background-color: pink;
+				margin: 12px 0 0 220px;
+				float: left;
+				position: relative;
+			}
+			.circle{
+				position: absolute;
+				bottom: 8px;
+				left: 50%;
+				margin-left: -66px;
+			}
+			.circle li{
+				width:18px;
+				height:18px;
+				border-radius:50%;
+				background-color: #3E3E3E;
+				float: left;
+				text-align: center;
+				line-height:13px;
+				color:#fff;
+				margin:0 2px;
+				cursor:pointer;
+			}
+			.cicle li.current{
+				background-color: #B61B1F;
+			}
+			.arrow{
+				display: none;
+			}
+			.arrow-l .arrow-r{
+				position: absolute;
+				width: 28px;
+				height: 62px;
+				top: 50%;
+				margin-top: -31px;
+				color: #fff;
+					font: 500 18px/62px "宋体";
+				text-align: center;
+				background: rgba(0,0,0,.2);
+			}
+			.arrow-l{
+				left: 0;
+			}
+			.arrow-r{
+				right: 0;
+			}

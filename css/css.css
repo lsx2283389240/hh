@@ -1,0 +1,80 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	vertical-align:top;
+}
+.css_box{
+	width:500px;
+	height:265px;
+	margin:100px auto;
+	position:relative;
+	overflow:hidden;
+	border:1px solid pink;
+}
+/*滚动盒子的样式*/
+.slider{
+	width:500px;
+	height:200px;
+	border:1px solid red;
+
+}
+.slider_main{
+	border:1px solid yellow;
+	width:500px;
+	height:200px;
+
+}
+.slider_main_img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:500px;
+	height:200px;
+}
+.slider_main_img img{
+	width:100%;
+}
+/*两侧滚动的样式*/
+.slider_ctrl{
+	text-align:center;
+	padding-top:25px;
+
+}
+/*,,,,,,*/
+/*控制点选轮播图的样式*/
+.slider_ctrl_con{
+	width:24px;
+	height:20px;
+	display:inline-block;
+	background:url(C:\Users\李淑贤\Desktop\file upload\images\pc4.jpg) no-repeat -24px -782px;
+	margin:0 5px;
+	cursor:pointer;
+	text-indent:-20em;
+	overflow:hidden;
+
+}
+.current{
+	background-position:-24px -762px;
+}
+/*滑动控制的两个span样式*/
+.slider_ctrl_prev,.slider_ctrl_next{
+	position:absolute;
+	top:50%;
+	margin-top:-35px;
+	background:url(C:\Users\李淑贤\Desktop\file upload\images\pc4.jpg) no-repeat 6px top;
+	width:30px;
+	height:35px;
+	opacity:0.8;
+	cursor:pointer;
+
+}
+.slider_ctrl_prev{
+	left:0;
+}
+.slider_ctrl_next{
+	right:0;
+	background-position:-6px -44px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul {
+				list-style: none;
+			}
+			img {
+				border: 0;
+				vertical-align: middle;
+			}
+			body {
+			 font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+			color: #666;
+			background: #fff;
+			}
+			a {
+				color: #666;
+				text-decoration: none;
+			}
+			.slider{
+				width: 990px;
+				height: 360px;
+				background-color: pink;
+				margin-left:auto;
+				margin-right:auto;
+				
+				position: relative;
+			}
+		
+			.circle{
+				position: absolute;
+				bottom: 8px;
+				left: 50%;
+				margin-left: -66px;
+			}
+			.circle li{
+				width:18px;
+				height:18px;
+				border-radius:50%;
+				background-color: #3E3E3E;
+				float: left;
+				text-align: center;
+				line-height:13px;
+				color:#fff;
+				margin:0 2px;
+				cursor:pointer;
+			}
+			.cicle li.current{
+				background-color: #B61B1F;
+			}
+			.arrow{
+				display: none;
+			}
+			.arrow-l .arrow-r{
+				position: absolute;
+				width: 28px;
+				height: 62px;
+				top: 50%;
+				margin-top: -31px;
+				color: #fff;
+				font: 500 18px/62px "宋体";
+				text-align: center;
+				background: rgba(0,0,0,.2);
+			}
+			.arrow-l{
+				left: 0;
+			}
+			.arrow-r{
+				right: 0;
+			}
+		</style>>
+	</head>
+	<body>
+		<div class="slider" id="slide">
+		<a href="#">
+			<img src="../file upload/images/46.jpg" alt="" id="pic"/>
+		</a>
+		<ul class="circle">
+			<!--小圆点-->
+			<li id="li01">1</li>
+			<li id="li02">2</li>
+			<li id="li03">3</li>
+			<li id="li04">4</li>
+			<li id="li05">5</li>
+			<li class="current">6</li>
+			
+		</ul>
+		<div class="arrow " id="arr" style="display: none;">
+			<!--左右两个三角-->
+			<a href="javascript:;"class="arrow-l">◁</a>
+			<a href="javascript:;"class="arrow-r">▷</a>
+			
+		</div>
+		<script>
+			
+			var arr=document.getElementById("arr");//两个三角
+			var slide=document.getElementById("slide");//轮播图盒子
+			slide.onmouseover=function(){
+				arr.style.display="block" //显示三角
+			}
+			slide.onmouseover=function(){
+				arr.style.display="none"; //掩盖三角
+			}
+			
+			var li01=document.getElementById("li01");
+			var li02=document.getElementById("li02");
+			var li03=document.getElementById("li03");
+			var li04=document.getElementById("li04");
+			var li05=document.getElementById("li05");
+			var pic=document.getElementById("pic");
+			li01.onmouseover=function(){
+				pic.src="../file upload/images/46.jpg"
+			}
+			li02.onmouseover=function(){
+				pic.src="../file upload/images/47.jpg"
+			}
+			li03.onmouseover=function(){
+				pic.src="../file upload/images/48.jpg"
+			}
+			li04.onmouseover=function(){
+				pic.src="../file upload/images/49.jpg"
+			}
+			li05.onmouseover=function(){
+				pic.src="../file upload/images/50.jpg"
+			}
+			li06.onmouseover=function(){
+				pic.src="../file upload/images/51.jpg"
+			}
+		</script>
+		</div>
+	</body>
+</html>

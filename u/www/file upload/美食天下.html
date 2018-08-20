@@ -1,0 +1,830 @@
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>美食天下</title>
+	<link rel="stylesheet" type="text/css" href="css/mstx.css">
+	<script type="text/javascript" src="js/w1.js"></script>
+
+ </head>
+ <body>
+  <div id="wrap">
+		<!--头部导航-->
+		<div class="hw">
+			<div class="header-top">
+				<ul class="header-top-left">
+					<li><a title="美食天下" href="#" target="_blank" class="header-top-logo"><i>美食天下</i>首页</a></li>
+					<li> <a title="菜谱" href="C:\Users\李淑贤\Desktop\file upload\菜单.html" target="_blank">菜谱</a></li>
+					<li> <a title="食材" href="#" target="_blank">食材</a></li>
+					<li> <a title="珍选" href="#" target="_blank">珍选</a></li>
+					<li> <a title="健康" href="#" target="_blank">健康</a></li>
+					<li> <a title="专题" href="#" target="_blank">专题</a></li>
+					<li> <a title="社区" href="#" target="_blank">社区</a></li>
+					<li> <a title="话题" href="#" target="_blank">话题</a></li>
+					<li> <a title="活动" href="#" target="_blank">活动</a></li>
+					<li> <a title="搜索" href="#" target="_blank">搜索</a></li>
+					<li class="header-top-more"><i></i>
+						<div>
+							<a title="烘焙" href="#" target="_blank">烘焙</a>
+							<a title="妈妈派" href="#" target="_blank">妈妈派</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			</div>
+	</div>
+		
+	
+			
+		<!--.......-->
+		
+			<div class="header-logo2">
+				<div class="logo-inner left">
+					<a href="#" title="美食天下"></a>
+				</div>
+				<div class="logo-search right">
+					<div class="searchBox ">
+						<a href="#" title="搜索" class="search-btn">搜索</a>
+						<input type="text" class="searchTxt">
+					</div>
+				</div>
+				<div class="logo-inner-nav">
+					<a title="首页" href="#" class="on" target="_bank">首页</a>
+					<a title="菜谱" href="C:\Users\李淑贤\Desktop\file upload\菜单.html"  target="_bank">菜谱</a>
+					<a title="食材" href="#"  target="_bank">食材</a>
+					<a title="珍选" href="#"  target="_bank">珍选</a>
+					<a title="健康" href="#"  target="_bank">健康</a>
+					<a title="专题" href="#"  target="_bank">专题</a>
+					<a title="社区" href="#"  target="_bank">社区</a>
+					<a title="话题" href="#"  target="_bank">话题</a>
+				</div>
+			</div>
+		
+
+		<!--主要内容-->
+		<div class="mw">
+			<div class="w wrap">
+				<div class="w1"  id="w1">
+					<div class="slider" id="slide">
+						<ul id="imgs">
+							  <li><img src="../file upload/images/pc9.jpg" /></li>
+							  <li><img src="../file upload/images/pc11.jpg" /></li>
+							  <li><img src="../file upload/images/pc6.jpg" /></li>
+							  <li><img src="../file upload/images/pc8.jpg" /></li>
+							  <li><img src="../file upload/images/pc7.jpg" /></li>
+						</ul>
+						<div id="arr"><span id="left"><</span><span id="right">></span></div>
+					</div>
+	            </div>
+				<script>
+					function $(id) {return document.getElementById(id)}
+						var w1= document.getElementById("w1");
+						w1.onmouseover = function() {
+							$("arr").style.display = "block";
+						}
+						w1.onmouseout = function() {
+							$("arr").style.display = "none";
+						}
+
+						$("right").onclick = function() {
+							target -= 990;
+						}
+						$("left").onclick = function() {
+							target += 990;
+						}
+
+					//缓动动画
+					var leader = 0,target = 0;
+					setInterval(function() {
+						if(target >= 0)
+						{
+							target = 0;
+						}
+						else if(target <= -4950)
+						{
+							target = -4950;
+						}
+						leader = leader + (target - leader) / 10;
+						$("imgs").style.left = leader + "px";
+					},30)
+				</script>
+				<div class="w2">
+					<div id="w2_slider">
+						<ul class="slider_container">
+						<li class="slide" data_slide="12">
+							<h2>
+								<a target="_blank" href="#">好心情甜点</a>
+							</h2>
+							<p>
+								<span>贤贤的菜单</span><br>"吃了这些美味的小甜点，可以考一百分啦"
+							</p>
+						</li>
+						<li class="slide" data_slide="13">
+							<h2>
+								<a target="_blank" href="#">好心情甜点</a>
+							</h2>
+							<p>
+								<span>贤贤的菜单</span><br>"吃了这些美味的小甜点，可以考一百分啦"
+							</p>
+						</li>
+						<li class="mm slide" data_slide="14">
+							<h2>
+								<a target="_blank" href="#">好心情甜点</a>
+							</h2>
+							<p>
+								<span>贤贤的菜单</span><br>"吃了这些美味的小甜点，可以考一百分啦"
+							</p>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<div class="w3 wrap">
+					<div class="w3_1 ">
+
+						<div class="ui_title"></div>
+						<div class="live on">
+							<a title="多汗缺水时节，补水食物来报道" href="#" class="w3a" target="_blank">
+								<img src="C:\Users\李淑贤\Desktop\file upload\images\w3a.jpg"   class="imgLoad">
+							</a>
+							<ul class="tuijian">
+								<li><a title="4款养生食物，夏季安神少不了" href="#" target="_blank">4款养生食物，夏季安神少不了</a></li>
+								<li><a title="夏天降血压，别错过这五类食物" href="#" target="_blank">夏天降血压，别错过这五类食物</a></li>
+								<li><a title="不一定要吃药，饮食也可排毒" href="#" target="_blank">不一定要吃药，饮食也可排毒</a></li>
+								<li><a title="喝茶可补肾，5款补肾茶喝起来" href="#" target="_blank">喝茶可补肾，5款补肾茶喝起来</a></li>
+								<li><a title="那些美颜食物的神级吃法" href="#">专题┊那些美颜食物的神级吃法</a></li>
+								<li><a title="低卡减肥餐，让你瘦到飞起来" href="#" target="_blank">专题┊低卡减肥餐，让你瘦到飞起来</a></li>
+							</ul>
+							</div>
+						</div>
+
+
+
+						<div class="w3_2 ">
+
+						<div class="ui_title"></div>
+						<div class="live on">
+							<a title="多汗缺水时节，补水食物来报道" href="#" class="w3a" target="_blank">
+								<img src="C:\Users\李淑贤\Desktop\file upload\images\017.jpg"   class="imgLoad">
+							</a>
+							<ul class="tuijian">
+								<li><a title="4款养生食物，夏季安神少不了" href="#" target="_blank">4款养生食物，夏季安神少不了</a></li>
+								<li><a title="夏天降血压，别错过这五类食物" href="#" target="_blank">夏天降血压，别错过这五类食物</a></li>
+								<li><a title="不一定要吃药，饮食也可排毒" href="#" target="_blank">不一定要吃药，饮食也可排毒</a></li>
+								<li><a title="喝茶可补肾，5款补肾茶喝起来" href="#" target="_blank">喝茶可补肾，5款补肾茶喝起来</a></li>
+								<li><a title="那些美颜食物的神级吃法" href="#">专题┊那些美颜食物的神级吃法</a></li>
+								<li><a title="低卡减肥餐，让你瘦到飞起来" href="#" target="_blank">专题┊低卡减肥餐，让你瘦到飞起来</a></li>
+							</ul>
+							</div>
+						</div>
+
+
+
+
+						<div class="w3_3 ">
+
+						<div class="ui_title"></div>
+						<div class="live on">
+							<a title="多汗缺水时节，补水食物来报道" href="#" class="w3a" target="_blank">
+								<img src="C:\Users\李淑贤\Desktop\file upload\images\pp.jpg"   class="imgLoad">
+							</a>
+							<ul class="tuijian">
+								<li><a title="4款养生食物，夏季安神少不了" href="#" target="_blank">4款养生食物，夏季安神少不了</a></li>
+								<li><a title="夏天降血压，别错过这五类食物" href="#" target="_blank">夏天降血压，别错过这五类食物</a></li>
+								<li><a title="不一定要吃药，饮食也可排毒" href="#" target="_blank">不一定要吃药，饮食也可排毒</a></li>
+								<li><a title="喝茶可补肾，5款补肾茶喝起来" href="#" target="_blank">喝茶可补肾，5款补肾茶喝起来</a></li>
+								<li><a title="那些美颜食物的神级吃法" href="#">专题┊那些美颜食物的神级吃法</a></li>
+								<li><a title="低卡减肥餐，让你瘦到飞起来" href="#" target="_blank">专题┊低卡减肥餐，让你瘦到飞起来</a></li>
+							</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="w5">
+					<div class="ui_title">
+						<div class="ui_title_wrap wrap">
+							<h3 class="on">
+								<a href="#">新秀菜谱</a>
+							</h3>
+							<h3></h3>
+							<h3></h3>
+						</div>
+					</div>
+					<div class="w5_main">
+						<ul class="on">
+							<li>
+								<a title="火山金针菇" href="#" target="_blank" class="u1">
+									<i><img alt="火山金针菇" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\010.jpg">
+									</i>
+									<p>火山金针菇</p>
+								</a>
+								<a title="尖尖_实验室" href="#" target="_blank" class="u2">尖尖_实验室</a>
+							</li>
+
+
+							<li>
+								<a title="肉丝卷" href="#" target="_blank" class="u1">
+									<i><img alt="肉丝卷" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a0.jpg">
+									</i>
+									<p>肉丝卷</p>
+								</a>
+								<a title="清清早餐铺" href="#" target="_blank" class="u2">清清早餐谱</a>
+							</li>
+
+
+
+							<li>
+								<a title="樱桃红" href="#" target="_blank" class="u1">
+									<i><img alt="樱桃红" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a1.jpg">
+									</i>
+									<p>樱桃红</p>
+								</a>
+								<a title="蛋糕小姐" href="#" target="_blank" class="u2">蛋糕小姐</a>
+							</li>
+
+
+							<li>
+								<a title="蔬涩汤圆" href="#" target="_blank" class="u1">
+									<i><img alt="蔬涩汤圆" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a2.jpg">
+									</i>
+									<p>蔬涩汤圆</p>
+								</a>
+								<a title="贤贤甜品" href="#" target="_blank" class="u2">贤贤甜品</a>
+							</li>
+
+
+							<li>
+								<a title="小笼包" href="#" target="_blank" class="u1">
+									<i><img alt="小笼包" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a3.jpg">
+									</i>
+									<p>小笼包</p>
+								</a>
+								<a title="贤贤甜品" href="#" target="_blank" class="u2">蒸心揽月</a>
+							</li>
+
+
+							<li>
+								<a title="茴香茶" href="#" target="_blank" class="u1">
+									<i><img alt="茴香茶" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a4.jpg">
+									</i>
+									<p>茴香茶</p>
+								</a>
+								<a title="贤贤甜品" href="#" target="_blank" class="u2">茗品阁</a>
+							</li>
+
+
+
+							<li>
+								<a title="壳底捞月" href="#" target="_blank" class="u1">
+									<i><img alt="壳底捞月" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a5.jpg">
+									</i>
+									<p>壳底捞月</p>
+								</a>
+								<a title="涂山美食" href="#" target="_blank" class="u2">涂山美食</a>
+							</li>
+
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a6.png">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a7.png">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a8.jpg">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a9.jpg">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a10.jpg">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a11.jpg">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a12.jpg">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a13.jpg">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+
+
+							<li>
+								<a title="铁板牛排" href="#" target="_blank" class="u1">
+									<i><img alt="铁板牛排" class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a14.jpg">
+									</i>
+									<p>铁板牛排</p>
+								</a>
+								<a title="韩国料理" href="#" target="_blank" class="u2">韩国料理</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="w4">
+					<div class="ui_title">
+						<div class="ui_title_wrap">
+							<h2 class="on">
+								<a title="时令食材" href="#" target="_bank">时令食材</a>
+								<a title="食材首页" href="#" target="_bank" class="right">食材首页</a>
+								<a title="肉禽蛋" href="#" target="_bank" class="right">肉禽蛋</a>
+								<a title="水产品" href="#" target="_bank" class="right">水产品</a>
+							</h2>
+						</div>
+					</div>
+					<div class="tui_c">
+						<ul>
+							<li>
+								<a title="番茄" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a15.jpg">番茄
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="西蓝花" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a16.jpg">西蓝花
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="柠檬" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a17.jpg">柠檬
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="黄椒" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a18.png">黄椒
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="豇豆" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a19.jpg">豇豆
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="丝瓜" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a20.jpg">丝瓜
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="黄桃" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a21.jpg">黄桃
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="包菜" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a22.jpg">包菜
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+							<li>
+								<a title="牛油果" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a23.jpg">牛油果
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+								<li>
+								<a title="甜橙" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a24.jpg">甜橙
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+								<li>
+								<a title="马铃薯" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a25.jpg">马铃薯
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+								<li>
+								<a title="紫蓝甘" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a26.jpg">紫蓝甘
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+								<li>
+								<a title="大蒜" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a27.jpg">大蒜
+								</a>
+								<span>美容养颜</span>
+							</li>
+
+								<li>
+								<a title="核桃" href="#" target="_blank">
+									<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a28.jpg">核桃
+								</a>
+								<span>美容养颜</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="w6">
+					<div class="ui_title">
+						<div class="ui_title_wrap wrap">
+							<h3 class="on">
+								<a  title="热门话题" href="#">热门话题</a>
+							</h3>
+							<h3 >
+								<a  title="精华日志" href="#">精华日志</a>
+							</h3>
+							<a title="社区首页" href="#" target="_blank" class="right">社区首页</a>
+							<a title="全部日志" href="#" target="_blank" class="right">全部日志</a>
+							<a title="全部话题" href="#" target="_blank" class="right">全部话题</a>
+						</div>
+					</div>
+					<div class="pin_list">
+						<ul>
+							<li>
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\a34.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具</strong>
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\35.png" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\36.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\37.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\38.jpg" style="display:block">
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+
+
+							<li class="clear">
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\39.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\46.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\47.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\48.jpg" style="display:block">
+										
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+								
+							<li>
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\41.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具</strong>
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\49.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\50.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\51.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\52.jpg" style="display:block">
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+
+
+
+							<li class="clear">
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\40.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具</strong>
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\53.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\54.jpg" style="display:block">
+										
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+
+							<li>
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\42.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具</strong>
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\55.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\56.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\57.jpg" style="display:block">
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+
+							<li class="clear">
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\43.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具</strong>
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\58.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\59.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\60.jpg" style="display:block">
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+							
+
+							<li>
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\44.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具</strong>
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\61.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\62.jpg" style="display:block">
+										
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+
+							<li class="clear">
+								<div class="u">
+									<a href="#" target="_blank">
+										<img class="imaLoad" src="C:\Users\李淑贤\Desktop\file upload\images\45.jpg">
+									</a>
+									<div>
+										<a href="#" class="t" targrt="_blank">春意盎然</a>
+										<span>2小时前</span>
+									</div>
+								</div>
+								<div class="c wrap">
+									<div class="pp">
+										<a href="#" target="_blank">
+												<strong>好厨房#选好厨具</strong>
+												<br />珍稀美食，选好厨具</strong>
+										</a>
+									</div>
+									<a class="clear" href="#" target="_blank">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\63.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\64.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\65.jpg" style="display:block">
+										<img class="imgLoad" src="C:\Users\李淑贤\Desktop\file upload\images\66.jpg" style="display:block">
+										<b>9</b>
+									</a>
+									<span>7个喜欢，6条评论</span>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部内容-->
+		<div class="footer  wrap">
+			<div class="w">
+				<div class="ft1">
+					<p class="c3b">
+						<a title="美食天下-让吃更美好！" href="#" target="_blank">美食天下-让吃更美好！</a>
+					</p>
+					<p class="c3c">
+						<a target="_blank" href="#" title="关于我们">关于我们</a>
+						.
+						<a target="_blank" href="#" title="关于我们">联系我们</a>
+						.
+						<a target="_blank" href="#" title="关于我们">加入我们</a>
+						.
+						<a target="_blank" href="#" title="关于我们">服务声明</a>
+						.
+						<a target="_blank" href="#" title="关于我们">友情链接</a>
+						.
+						<a target="_blank" href="#" title="关于我们">网站地图</a>
+						.
+						<a target="_blank" href="#" title="关于我们">移动应用</a>
+					</p>
+				</div>
+				<div class="ft4">
+					<img width="82" title="微信公众号" src="C:\Users\李淑贤\Desktop\file upload\images\weixin.jpg">
+					微信公众号
+				</div>
+				<div class="ft3">
+					<img width="82" title="手机客户端" src="C:\Users\李淑贤\Desktop\file upload\images\手机端.jpg">
+			        手机客户端
+				</div>
+				<div class="w-links wrap">
+					<ul>
+						<li>
+							<strong>友情链接:</strong>
+						</li> 
+						<li>
+							<a target="_blank" href="#"title="愉悦妈妈">愉悦妈妈</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="自由乐">自由乐</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="美食一按下">美食一按下</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="中华美食">中华美食</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="淘宝购">淘宝购</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="美食达人">美食达人</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="花瓣网">花瓣网</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="红餐网">红餐网</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="三九养生堂">三九养生堂</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="食品商务网">食品商务网</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="糖豆网">糖豆网</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="爱奇艺生活">爱奇艺生活</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="向往的生活">向往的生活</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="拜托啦，冰箱">拜托啦，冰箱</a>
+						</li>
+						<li>
+							<a target="_blank" href="#"title="奇思妙想">奇思妙想</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+  </div>
+ </body>
+ 
+</html>
